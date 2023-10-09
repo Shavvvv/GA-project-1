@@ -1,4 +1,5 @@
-// types of bets
+	/*----- constants -----*/
+    // types of bets
 const fiveDollar = 5;
 const tenDollar = 10;
 
@@ -52,8 +53,37 @@ let lb0123 = [zero,one,two,three]
 
 
 
-let bet=fiveDollar
 
 
+	/*----- state variables -----*/
+let payout=36;
+
+	/*----- cached elements  -----*/
 
 
+	/*----- event listeners -----*/
+ let chipSet=document.getElementById('cash-chips');
+ let betPrice=chipSet.addEventListener('click',setBetPrice)
+
+
+	/*----- functions -----*/
+
+function setBetPrice(e){
+    let choice=e.target;
+    if(choice.innerText ==='5'){
+        bet=fiveDollar
+        console.log(`price= ${bet}`)
+    }else if(choice.innerText ==='10'){
+        bet=tenDollar
+        console.log(`price= ${bet}`)
+    }
+
+    }
+
+let userBet=document.getElementById('odd/even-bets')
+let userBetListener=userBet.addEventListener
+
+    if(!isNaN(bet)){
+let wheelSpin= Math.floor(Math.random()*37)
+    }
+    
