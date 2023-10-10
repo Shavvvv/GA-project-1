@@ -1,89 +1,148 @@
-	/*----- constants -----*/
+    /*----- constants -----*/
     // types of bets
-const fiveDollar = 5;
-const tenDollar = 10;
+    const fiveDollar = 5;
+    const tenDollar = 10;
+    const fifteenDollar=15;
 
-
-//straight up bets
-
-let zero = 0
-let one = 1
-let two = 2
-let three = 3
-let four = 4
-let five = 5
-let six =  6
-let seven = 7
-let eight = 8
-let nine = 9
-let ten = 10
-let eleven = 11
-let twelve = 12
-let thirteen = 13
-let fourteen = 14
-let fifteen = 15
-let sixteen = 16
-let seventeen = 17
-let eighteen = 18
-let nineteen = 19
-let twenty = 20
-let twentyOne = 21
-let twentyTwo = 22
-let twentyThree = 23
-let twentyFour = 24
-let twentyFive = 25
-let twentySix = 26
-let twentySeven = 27
-let twentyEight = 28
-let twentyNine = 29
-let thirty = 30
-let thirtyOne = 31
-let thirtyTwo = 32
-let thirtyThree = 33
-let thirtyFour = 34
-let thirtyFive = 35
-let thirtySix = 36
-
-
-//line bets 
-
-
-let lb0123 = [zero,one,two,three]
-
-
-
-
-
-
-	/*----- state variables -----*/
-let payout=36;
-
-	/*----- cached elements  -----*/
-
-
-	/*----- event listeners -----*/
- let chipSet=document.getElementById('cash-chips');
- let betPrice=chipSet.addEventListener('click',setBetPrice)
-
-
-	/*----- functions -----*/
-
-function setBetPrice(e){
-    let choice=e.target;
-    if(choice.innerText ==='5'){
-        bet=fiveDollar
-        console.log(`price= ${bet}`)
-    }else if(choice.innerText ==='10'){
-        bet=tenDollar
-        console.log(`price= ${bet}`)
-    }
-
-    }
-
-let userBet=document.getElementById('odd/even-bets')
-let userBetListener=userBet.addEventListener
-
-    if(!isNaN(bet)){
-let wheelSpin= Math.floor(Math.random()*37)
+    //  payouts 
+    const payouts={
+        straightUp:36,
+        odds:2,
+        evens:2,
+        lowNums:2,
+        highNums:2
     }
     
+    
+    //straight up bets
+    const numbers=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
+    18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]
+
+
+
+  /*----- state variables -----*/
+let wheelSpin;
+let payout=0;
+  /*----- cached elements  -----*/
+let betWager;
+let betsMade=[]
+
+  /*----- event listeners -----*/
+
+  //listeners  for user bet amount
+  let findChipBtn = document.getElementById('cash-chips');
+  let setChipBtn = findChipBtn.addEventListener('click',setBetPrice);  
+
+  // listener for user bets made
+
+  let findBetsBtn = document.getElementById('bets-to-be-made')
+  let setBetsBtn = findBetsBtn.addEventListener('click',pushBets)
+
+   // listener for play button
+
+   let findPlayBtn = document.getElementById('spin-wheel')
+   let setPlayBtn = findPlayBtn.addEventListener('click',playGame)
+
+
+
+
+  /*----- functions -----*/
+
+
+
+  // Function to assign the value of user bets 
+  function setBetPrice(e){
+    let choice=e.target;
+    if(choice.innerText ==='$5'){
+        betWager=fiveDollar
+        console.log(`price= ${betWager}`)
+        return;
+    }else if(choice.innerText ==='$10'){
+        betWager=tenDollar
+        console.log(`price= ${betWager}`)
+    }else if(choice.innerText ==='$15'){
+        betWager=fifteenDollar
+        console.log(`price= ${betWager}`)
+    }
+
+    }
+
+
+
+    function pushBets(e){
+
+        let betType=e.target.innerText;
+
+      betsMade.push(betType)
+   
+console.log(betsMade)
+
+    }
+
+
+ // plays the game, "Spins the wheel"
+function playGame(){
+
+    wheelSpin= numbers[Math.floor(Math.random()*37)]
+    console.log(wheelSpin)
+
+    checkWins()
+
+}
+
+function checkWins(){
+    
+    betsMade.forEach(function(bet){
+
+if((bet==='odd')&& (wheelSpin%2===1)){
+payout+=betWager*payouts.odds;
+console.log(`payout= $ ${payout}`)
+}
+
+if((bet==='even')&& (wheelSpin%2===0) && (wheelSpin!==0)){
+    payout+=betWager*payouts.evens;
+    console.log(`payout= $ ${payout}`)
+    }
+   
+
+
+    if((bet==='1-18') &&  wheelSpin<19 && wheelSpin!==0){
+        payout+=betWager*payouts.lowNums;
+        console.log(`payout= $ ${payout}`)
+    }
+
+
+    if((bet==='19-36') &&  wheelSpin>18 ){
+        payout+=betWager*payouts.highNums;
+        console.log(`payout= $ ${payout}`)
+    }
+
+})
+
+
+}
+
+
+// init function runs here
+init()
+
+
+
+  // init function is declared here
+    function init(){
+
+         
+
+        render()
+    }
+
+
+    function render(){
+
+
+
+
+
+
+    }
+
