@@ -10,7 +10,11 @@
         odds:2,
         evens:2,
         lowNums:2,
-        highNums:2
+        highNums:2,
+        reds:2,
+        blacks:2,
+
+
     }
     
     
@@ -18,6 +22,8 @@
     const numbers=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
     18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]
 
+    const black=[2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35]
+    const red =[1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36]
 
 
   /*----- state variables -----*/
@@ -114,6 +120,20 @@ if((bet==='even')&& (wheelSpin%2===0) && (wheelSpin!==0)){
 
     if((bet==='19-36') &&  wheelSpin>18 ){
         payout+=betWager*payouts.highNums;
+        console.log(`payout= $ ${payout}`)
+    }
+
+
+    if((bet==='red')&&(red.includes(wheelSpin))){
+
+        payout+=betWager*payouts.reds;
+        console.log(`payout= $ ${payout}`)
+    }
+
+
+    if((bet==='black')&&(black.includes(wheelSpin))){
+
+        payout+=betWager*payouts.blacks;
         console.log(`payout= $ ${payout}`)
     }
 
