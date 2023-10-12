@@ -104,12 +104,109 @@
     const CORNER_31_32_34_35=[31,32,34,35]
     const CORNER_32_33_35_36=[32,33,35,36]
 
-
+        //  split bets going accross
     const split01=[0,1]
+    const split02=[0,2]
+    const split03=[0,3]
+    const split1_4=[1,4]
+    const split2_5=[2,5]
+    const split3_6=[3,6]
+    const split4_7=[4,7]
+    const split5_8=[5,8]
+    const split6_9=[6,9]
+    const split7_10=[7,10]
+    const split8_11=[8,11]
+    const split9_12=[9,12]
+    const split10_13=[10,13]
+    const split11_14=[11,14]
+    const split12_15=[12,15]
+    const split13_16=[13,16]
+    const split14_17=[14,17]
+    const split15_18=[15,18]
+    const split16_19=[16,19]
+    const split17_20=[17,20]
+    const split18_21=[18,21]
+    const split19_22=[19,22]
+    const split20_23=[20,23]
+    const split21_24=[21,24]
+    const split22_25=[22,25]
+    const split23_26=[23,26]
+    const split24_27=[24,27]
+    const split25_28=[25,28]
+    const split26_29=[26,29]
+    const split27_30=[27,30]
+    const split28_31=[28,31]
+    const split29_32=[29,32]
+    const split30_33=[30,33]
+    const split31_34=[31,34]
+    const split32_35=[32,35]
+    const split33_36=[33,36]
 
-    
-    
+    // split bets going down
+    const split1_2=[1,2]
+    const split2_3=[2,3]
+    const split4_5=[4,5]
+    const split5_6=[5,6]
+    const split7_8=[7,8]
+    const split8_9=[8,9]
+    const split10_11=[10,11]
+    const split11_12=[11,12]
+    const split13_14=[13,14]
+    const split14_15=[14,15]
+    const split16_17=[16,17]
+    const split17_18=[17,18]
+    const split19_20=[19,20]
+    const split20_21=[20,21]
+    const split22_23=[22,23]
+    const split23_24=[23,24]
+    const split25_26=[25,26]
+    const split26_27=[26,27]
+    const split28_29=[28,29]
+    const split29_30=[29,30]
+    const split31_32=[31,32]
+    const split32_33=[32,33]
+    const split34_35=[34,35]
+    const split35_36=[35,36]
+  
 
+  //  straight up bets
+const ZERO=0
+const ONE=1;
+const TWO=2;
+const THREE=3;
+const FOUR=4;
+const FIVE=5;
+const SIX=6
+const SEVEN=7
+const EIGHT=8
+const NINE=9
+const TEN=10
+const ELEVEN=11
+const TWELVE=12
+const THIRTEEN=13
+const FOURTEEN =14
+const FIFTEEN=15
+const SIXTEEN=16
+const SEVENTEEN =17
+const EIGHTEEN=18
+const NINETEEN=19
+const TWENTY=20
+const TWENTYONE=21
+const TWENTYTWO=22
+const TWENTYTHREE=23
+const TWENTYFOUR=24
+const TWENTYFIVE=25
+const TWENTYSIX=26
+const TWENTYSEVEN=27
+const TWENTYEIGHT=28
+const TWENTYNINE=29
+const THIRTY=30
+const THIRTY0NE=31
+const THIRTYTWO=32
+const THIRTYTHREE=33
+const THIRTYFOUR=34
+const THIRTYFIVE=35
+const   THIRTYSIX=36
 
 
 
