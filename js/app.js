@@ -21,7 +21,8 @@
         dozen_3rd:3,
         topLine:9,
         line:6,
-        street:12
+        street:12,
+        corner:9,
 
 
 
@@ -62,7 +63,9 @@
     const ST_28_33 = [28,29,30,31,32,33]
     const ST_31_36 = [31,32,33,34,35,36]
     const TOP_LINE = [0,1,2,3]
-   
+
+
+   // Arrays for Street bets
     const STREET_1 =[1,2,3]
     const STREET_4 =[4,5,6]
     const STREET_7=[7,8,9]
@@ -76,6 +79,38 @@
     const STREET_31 =[31,32,33]
     const STREET_34 =[34,35,36]
   
+    // Arrays for corner Bets
+   
+    const CORNER_1_2_4_5 =[1,2,4,5]
+    const CORNER_2_3_5_6=[2,3,5,6]
+    const CORNER_4_5_7_8=[4,5,7,8]
+    const CORNER_5_6_8_9 =[5,6,8,9]
+    const CORNER_7_8_10_11=[7,8,10,11]
+    const CORNER_8_9_11_12=[8,9,11,12]
+    const CORNER_10_11_13_14=[10,11,13,14]
+    const CORNER_11_12_14_15=[11,12,14,15]
+    const CORNER_13_14_16_17=[13,14,16,17]
+    const CORNER_14_15_17_18=[14,15,17,18]
+    const CORNER_16_17_19_20=[16,17,19,20]
+    const CORNER_17_18_20_21=[17,18,20,21]
+    const CORNER_19_20_22_23=[19,20,22,23]
+    const CORNER_20_21_23_24=[20,21,23,24]
+    const CORNER_22_23_25_26=[22,23,25,26]
+    const CORNER_23_24_26_27=[23,24,26,27]
+    const CORNER_25_26_28_29=[25,26,28,29]
+    const CORNER_26_27_29_30=[26,27,29,30]
+    const CORNER_28_29_31_32=[28,29,31,32]
+    const CORNER_29_30_32_33=[29,30,32,33]
+    const CORNER_31_32_34_35=[31,32,34,35]
+    const CORNER_32_33_35_36=[32,33,35,36]
+
+
+    const split01=[0,1]
+
+    
+    
+
+
 
 
   /*----- state variables -----*/
@@ -283,8 +318,170 @@ if((bet==='even')&& (wheelSpin%2===0) && (wheelSpin!==0)){
         payout+=betWager*payouts.line;
         console.log(`payout= $ ${payout}`)
     }
+  
+    if((bet==='STREET_1') && (STREET_1.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_4') && (STREET_4.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_7') && (STREET_7.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_10') && (STREET_10.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_13') && (STREET_13.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_16') && (STREET_16.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_19') && (STREET_19.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_22') && (STREET_22.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+
+    if((bet==='STREET_25') && (STREET_25.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_28') && (STREET_28.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+    if((bet==='STREET_31') && (STREET_31.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
+
+    if((bet==='STREET_34') && (STREET_34.includes(wheelspin))){
+        payout+=betWager*payouts.street;
+        console.log(`payout= $ ${payout}`)
+    }
 
 
+    if((bet==='CORNER1') && (CORNER_1_2_4_5.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER2') && (CORNER_2_3_5_6.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER4') && (CORNER_4_5_7_8.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER5') && (CORNER_5_6_8_9.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER7') && (CORNER_7_8_10_11.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER8') && (CORNER_8_9_11_12.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER10') && (CORNER_10_11_13_14.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER11') && (CORNER_11_12_14_15.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER13') && (CORNER_13_14_16_17.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER14') && (CORNER_14_15_17_18.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER16') && (CORNER_16_17_19_20.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER17') && (CORNER_17_18_20_21.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER19') && (CORNER_19_20_22_23.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER20') && (CORNER_20_21_23_24.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER22') && (CORNER_22_23_25_26.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER23') && (CORNER_23_24_26_27.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER25') && (CORNER_25_26_28_29.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER26') && (CORNER_26_27_29_30.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER28') && (CORNER_28_29_31_32.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER29') && (CORNER_29_30_32_33.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER31') && (CORNER_31_32_34_35.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+    if((bet==='CORNER32') && (CORNER_32_33_35_36.includes(wheelSpin))){
+        payout+=betWager*payouts.corner;
+        console.log(`payout= $ ${payout}`) 
+    }
+
+   
 
 
 
