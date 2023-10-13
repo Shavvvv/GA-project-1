@@ -18,9 +18,12 @@ BASIC outline
 
 3. Play game (spin the wheel)
 
-![alt text](https://imgur.com/q7xpLjC "Roulette Start")
+![Game start](https://imgur.com/q7xpLjC "Roulette Start")
 
 The Game is designed using JavaScript, HTML as well as CSS.
+
+
+![Game in progress](https://imgur.com/kO6KmeW "Output after user makes bets")
 
 
 Additionally the player has the option to remove the last bet they wagered.
