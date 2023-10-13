@@ -20,3 +20,10 @@ body{
 }
 
 
+#spin-wheel{
+background-color: rgb(30, 238, 30);
+}
+
+#remove-bet{
+    background-color: rgb(177, 27, 27);
+}
