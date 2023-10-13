@@ -1086,7 +1086,7 @@ betsMade.shift();
 let winNotice=document.createElement("div")
 
 document.body.appendChild(winNotice)
-winNotice.innerText=`Amount won: $${pagePayout}`
+winNotice.innerText=`Number =${wheelSpin}   Amount won: $${pagePayout}`
 
 
 }

@@ -9,3 +9,12 @@
 
     */
 }
+
+
+body{
+    background-color: bisque;
+}
+
+#cash-chips >button{
+    background-color: aqua;
+}
