@@ -1,6 +1,6 @@
 # GA-project-1
 
-roulette
+##  Roulette
 
 HELLO ALL!!!!!
 
@@ -17,13 +17,17 @@ BASIC outline
 2. Place bets
 
 3. Play game (spin the wheel)
+# Start of game
 
-![Game start](https://imgur.com/q7xpLjC "Roulette Start")
+![start](/Screenshot%202023-10-13%20at%208.37.44%20AM.png)
+
+# Game in progress
+
+![In Progress](/Screenshot%202023-10-13%20at%209.13.03%20AM.png)
 
 The Game is designed using JavaScript, HTML as well as CSS.
 
 
-![Game in progress](https://imgur.com/kO6KmeW "Output after user makes bets")
 
 
 Additionally the player has the option to remove the last bet they wagered.
