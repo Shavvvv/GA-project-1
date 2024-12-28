@@ -1,14 +1,28 @@
+
+
+
+body{
+    background-color: bisque;
+    
+}
+
+#game-title{
+text-align: center;
+}
+
+#game-description{
+    outline-color: rgb(7, 112, 188);
+   text-align: center;
+}
+
+#game-rules{
+outline-style:dotted;
+}
 #bets-to-be-made{
   background-color:rgb(7, 112, 188) ;
   border-radius: 10%;
  
 }
-
-
-body{
-    background-color: bisque;
-}
-
 #cash-chips >button{
     background-color: rgb(96, 94, 218);
     padding:0;
