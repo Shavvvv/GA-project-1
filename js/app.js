@@ -1094,7 +1094,8 @@ winNotice.innerText=`Number =${wheelSpin}   Amount won: $${pagePayout}`
 
 function removeBets(){
 
-betsMade.pop()
+    betsMade.pop()
+    console.log("bets.removed..."+ betsMade);
 
 }
 // init function runs here
