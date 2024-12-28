@@ -39,3 +39,8 @@ background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
  background-color: rgb(255, 0, 0);
  }
+
+ .zero-btn{
+    background-color: rgb(15, 226, 15);
+    color: white;
+ }
